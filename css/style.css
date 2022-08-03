@@ -32,13 +32,13 @@ nav li:first-child {
   padding: 0;
   margin: 0;
 }
-#top div {
+#top div, #download div {
   text-align: center;
   justify-content: center;
-  /* width: 50%; */
-  padding: 2rem;
+  align-items: center;
+  padding: 4rem;
 }
-#top a {
+#top a, #download a {
   border-radius: 30px;
   padding: 10px 20px;
   margin:0.5rem;
@@ -70,10 +70,53 @@ footer ul {
   color: #5C5C5C;
 }
 .fa {
-  /* background-color:#FA4A0C;
-  color: #fff; */
   padding: 10px;
   font-size: 2rem !important;
   background-color:#fff;
   color: #FA4A0C;
+}
+/* App section */
+#app h2:first-child{
+  justify-content: center;
+  text-align: center;
+}
+#app .wrapper{
+  width:70%;
+  display: flex;
+  flex-flow: row-wrap;
+  gap: 0 20px;
+  margin: auto;
+  align-items: center;
+  height: 70vh;
+  overflow: hidden;
+}
+#app p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+#app h3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  color: #FA4A0C;
+}
+#app .text {
+  padding: 0 4rem;
+}
+/* download app */
+#download {
+  background: url("../images/footer-bg.jpg");
+  background-size: 100% auto;
+  font-family: 'Poppins';
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #fff;
+}
+#download a {
+  border-radius: 10px;
 }
