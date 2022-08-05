@@ -139,6 +139,32 @@ footer ul {
   color: #FA4A0C;
 }
 @media (max-width: 650px) {
+  #mobile-nav{
+    display: block !important;
+  }
+  #mobile-nav button{
+    float: right;
+    align-items: center;
+    margin: 1rem;
+  }
+  #mobile-nav-list ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    background-color: #737373;
+  }
+  #mobile-nav-list li {
+    border-bottom: 1px solid #fff;
+    padding: 0.5rem;
+    color: white;
+  }
+  nav ul {
+    display: none;
+  }
   #download {
     background-image: none;
     background-color: #252B42;
@@ -155,7 +181,7 @@ footer ul {
   }
   #top {
     background-image: none;
-    background-color: #fff;
+    background-color: #FAFAFA;
     font-weight: 700;
     color: #000;
     padding: 0;
@@ -189,4 +215,7 @@ footer ul {
     margin: 0;
     padding: 0;
   }
+}
+#mobile-nav{
+  display:none;
 }
