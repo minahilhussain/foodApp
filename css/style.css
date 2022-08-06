@@ -44,7 +44,6 @@ nav li:first-child {
   align-items: center;
   font-weight: 700;
   color: #fff;
-  /* background-size: 100% auto; */
   height:74.85vh;
   padding: 0;
   margin: 0;
@@ -57,11 +56,9 @@ nav li:first-child {
 }
 #top a, #download a {
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 0.8rem 1.2rem;
   margin:0.5rem;
   text-decoration: none;
-  width: 236px;
-  height: 68px;
   color: #fff;
 }
 .play-store-button {
@@ -139,13 +136,22 @@ footer ul {
   color: #FA4A0C;
 }
 @media (max-width: 650px) {
-  #mobile-nav{
-    display: block !important;
+  #top div{
+    padding: 0;
   }
-  #mobile-nav button{
-    float: right;
+  .mobile-top {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
     align-items: center;
-    margin: 1rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+  #mobile-nav{
+    display: flex !important;
+    flex-flow: row-wrap;
+    justify-content: space-between;
+    align-items: center;
   }
   #mobile-nav-list ul{
     display: flex;
