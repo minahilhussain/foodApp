@@ -11,12 +11,23 @@ nav ul {
   gap: 4rem;
   height: 3.5rem;
 }
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover,
+#mobile-nav-list a {
+  color: #FA4A0C
+}
 nav li:first-child {
   flex-basis: 50%;
   text-align: left;
 }
 .active {
-  color: #FA4A0C
+  color: #FA4A0C !important;
+}
+#mobile-nav-list {
+  display:none;
 }
 /* front section */
 #front ul{
@@ -72,11 +83,11 @@ h2 {
   font-size: 150%;
 }
 /* App section */
-#app h2:first-child{
+#app h2:first-child {
   justify-content: center;
   text-align: center;
 }
-#app .wrapper{
+#app .wrapper {
   width:70%;
   display: flex;
   flex-flow: row-wrap;
@@ -167,6 +178,10 @@ footer ul {
     border-bottom: 1px solid #fff;
     padding: 0.5rem;
     color: white;
+  }
+  #mobile-nav-list a {
+    text-decoration: none;
+    color: #E4E4E4;
   }
   nav ul {
     display: none;
