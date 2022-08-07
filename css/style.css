@@ -26,7 +26,7 @@ nav li:first-child {
 .active {
   color: #FA4A0C !important;
 }
-#mobile-nav-list {
+#mobile-nav-list ul{
   display:none;
 }
 /* front section */
@@ -147,7 +147,7 @@ footer ul {
   color: #FA4A0C;
 }
 @media (max-width: 650px) {
-  #top div{
+  #top div, #download div{
     padding: 0;
   }
   .mobile-top {
@@ -208,13 +208,14 @@ footer ul {
     padding: 0;
     margin: 0;
   }
-  #top .play-store-button {
+  .play-store-button {
     background-color: #FA4A0C;
   }
-  #top .app-store-button {
+  .app-store-button {
     background: white;
     border:  1px solid #FA4A0C;
-    color: #FA4A0C;
+    color: #FA4A0C !important;
+    padding: 0.8rem !important;
   }
   #app .wrapper{
     width:90%;
